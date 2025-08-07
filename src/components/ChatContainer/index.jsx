@@ -37,6 +37,7 @@ export const ChatContainer = () => {
       <div className={`${styles.chat} mt-10`}>
         {messages.map((msg) => (
           <ChatBubble
+            isUser={msg.role === 'user'}
             key={msg.id}
             message={msg.parts.find(p => p.type === 'text').text}
           />
