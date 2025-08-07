@@ -2,7 +2,7 @@ import "./reset.css";
 import "./globals.css";
 import { Container } from "@/components/Container";
 import { Header } from "@/components/Header";
-import { Roboto } from 'next/font/google'
+import { Roboto, Outfit } from 'next/font/google'
 
 export const metadata = {
   title: "Vidy",
@@ -12,6 +12,10 @@ export const metadata = {
 const roboto = Roboto({
   weight: ['400', '700'],
   subsets: ['latin'],
+})
+export const outfit = Outfit({
+  weight: ['400','700'],
+  subsets: ['latin']
 })
 
 export default function RootLayout({ children }) {

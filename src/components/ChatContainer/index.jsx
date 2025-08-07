@@ -9,9 +9,28 @@ import { Loader } from "../Loader";
 import { RetryButton } from "../RetryButton";
 import styles from "./container.module.css";
 import { useChat } from "@ai-sdk/react";
+import { DefaultChatTransport } from 'ai';
+import { useEffect, useState } from 'react'
 
 export const ChatContainer = () => {
-  const { messages, input, handleInputChange, handleSubmit } = useChat();
+  const [input, setInput] = useState('')
+  const { messages, sendMessage } = useChat({
+    transport: new DefaultChatTransport({
+      api: '/api/chat',
+    }),
+  });
+  const handleSubmit = async e => {
+    e.preventDefault();
+    try {
+      await sendMessage({ text: input });
+    } catch (error) {
+      console.error("Erro ao enviar mensagem:", error);
+    }
+    setInput('');
+  };
+  useEffect(() => {
+    console.log(messages)
+  }, [messages])
 
   return (
     <section className={styles.container}>
@@ -19,15 +38,13 @@ export const ChatContainer = () => {
         {messages.map((msg) => (
           <ChatBubble
             key={msg.id}
-            message={msg.message}
-            isUser={msg.isUser}
-            onRemove={() => console.log("remove message", msg.id)}
+            message={msg.parts.find(p => p.type === 'text').text}
           />
         ))}
       </div>
       <ChatForm
         input={input}
-        handleInputChange={handleInputChange}
+        handleInputChange={e => setInput(e.target.value)}
         handleSubmit={handleSubmit}
       />
     </section>

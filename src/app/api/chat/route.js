@@ -3,11 +3,12 @@ import { convertToModelMessages, streamText } from "ai";
 
 export async function POST(request) {
   const { messages } = await request.json();
-
-  const result = await streamText({
-    model: openai("gpt-3.5-turbo"),
+  const result = streamText({
+    model: openai("gpt-4o"),
     messages: convertToModelMessages(messages),
+    system: 'Você é um assistente pessoal divertido e simpático que sabe tudo sobre filmes e o mundo do cinema. Se alguém perguntar algo que não seja sobre filmes, responda de maneira divertidade que fala somente sobre filmes e ofereça os seus serviços'
   });
-  console.log("aqui");
-  return result.toTextStreamResponse();
+  
+
+  return result.toUIMessageStreamResponse();
 }
