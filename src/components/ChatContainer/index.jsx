@@ -18,7 +18,7 @@ export const ChatContainer = () => {
     transport: new DefaultChatTransport({
       api: '/api/chat',
     }),
-    messages: [{ parts: [{ type: 'text', text: 'hello' }] }]
+    // messages: [{ parts: [{ type: 'text', text: 'hello' }] }]
   });
   const handleSubmit = async e => {
     e.preventDefault();
@@ -60,6 +60,7 @@ export const ChatContainer = () => {
       }
       {error && <p>Ops, alguma coisa deu errado!</p>}
       <ChatForm
+        disabled={status == 'streaming'}
         input={input}
         handleInputChange={e => setInput(e.target.value)}
         handleSubmit={handleSubmit}

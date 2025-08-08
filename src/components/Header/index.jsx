@@ -11,8 +11,8 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={`flex gap-1 ${outfit.className} items-baseline-last`}>
-        <div className="text-4xl">Vidy</div>
-        <div>- Seu amigo cinéfilo virtual</div>
+        <div className="text-4xl">ROB</div>
+        <div>- Tech Help</div>
       </div>
 
 

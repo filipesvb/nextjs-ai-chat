@@ -5,8 +5,8 @@ import { Header } from "@/components/Header";
 import { Roboto, Outfit } from 'next/font/google'
 
 export const metadata = {
-  title: "Vidy",
-  description: "Seu amigo cinéfilo, agora mais inteligente",
+  title: "ROB",
+  description: "Tech Help",
 };
 
 const roboto = Roboto({
