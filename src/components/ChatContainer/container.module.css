@@ -4,6 +4,8 @@
     flex-direction: column;
     gap: 24px;
     height: calc(100vh - 140px);
+    scrollbar-color: white #5e819ca9;
+    scrollbar-width: thin;
 }
 
 .chat {

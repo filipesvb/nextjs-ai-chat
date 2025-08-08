@@ -10,5 +10,22 @@ export async function POST(request) {
   });
   
 
-  return result.toUIMessageStreamResponse();
+  return result.toUIMessageStreamResponse({
+     onError: (error) => {
+      if(error === null) {
+        console.error('[POST] :: toUIMessageStreamResponse - erro chegou nulo e não sabemos o que aconteceu')
+        return 'Algum error inesperado aconteceu'
+      }
+
+      if(typeof error === "string") {
+        return error;
+      }
+
+      if(typeof error === Error) {
+        return error.message;
+      }
+
+      return JSON.stringify(error)
+     }
+  });
 }
