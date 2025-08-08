@@ -1,49 +1,43 @@
 ![](thumbnail.png)
 
-![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
+<h1 align="center">🤖 ROB – Tech Help</h1>
 
-# Curso: Vercel IA SDK
+<p align="center">
+  Seu assistente inteligente para suporte técnico e programação
+</p>
 
-Neste curso, você aprenderá a integrar o Vercel AI SDK em uma aplicação Next.js para construir um assistente inteligente que interage com usuários de forma dinâmica. O projeto do curso, chamado Vidy, será um assistente especializado em recomendações de filmes, demonstrando como utilizar IA e SSR (Server-Side Rendering) juntos.
+<p align="center">
+  <img src="https://img.shields.io/github/stars/filipesvb/nextjs-ai-chat?style=for-the-badge" alt="Stars"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/IA-Powered-FF5733?style=for-the-badge" alt="IA Powered"/>
+</p>
 
-## 🔨 Funcionalidades do projeto
+---
 
-Durante o curso, você implementará:
+## 📸 Demonstração
 
-- Um assistente de IA capaz de responder perguntas sobre filmes.
-- Implementação de respostas em tempo real utilizando streaming de respostas do modelo de IA.
-- Integração com modelos de linguagem avançados (como GPT) para processar e responder perguntas.
-- Rate limiting para controlar o fluxo de requisições ao assistente.
+> _(GIF ou imagem mostrando o ROB – Tech Help em ação)_
 
-## ✔️ Técnicas e tecnologias utilizadas
+<p align="center">
+  <img src="demo.gif" alt="Demonstração do ROB - Tech Help" width="600"/>
+</p>
 
-Você irá trabalhar com as seguintes tecnologias e conceitos:
+---
 
-- **Next.js**: Framework React com funcionalidades de SSR e API Routes.
-- **Vercel AI SDK**: SDK para construir e integrar assistentes de IA em aplicações web.
-- **Redis e upstash**: Para gerenciamento de rate limiting e controle de acessos.
-- **Logs e tratamento de erros**: Implementação de um sistema robusto de gerenciamento de logs e controle de erros.
+## 🔨 Funcionalidades
 
-## 🎯 O que você vai aprender
+- 🤝 **Suporte técnico inteligente** sobre hardware, software, programação e redes.
+- ⚡ **Respostas em tempo real** com processamento de linguagem natural.
+- 🧠 **Integração com IA** para fornecer soluções assertivas.
+- 🚦 **Rate limiting** para garantir estabilidade e segurança.
+- 🛡 **Tratamento de erros e logging** para maior confiabilidade.
 
-Ao longo do curso, você aprenderá a:
+---
 
-- Criar um assistente de IA utilizando o modelo GPT.
-- Implementar rate limiting para proteger suas rotas e limitar o número de requisições.
-- Configurar o SDK da Vercel AI para construir fluxos de comunicação entre o assistente e os usuários.
-- Gerenciar logs e erros.
+## 🛠️ Tecnologias utilizadas
 
-## 🛠️ Como executar o projeto
-
-Siga os passos abaixo para rodar o projeto localmente:
-
-1. Clone o repositório para sua máquina.
-2. Abra o projeto no seu editor de código preferido.
-3. No terminal, navegue até o diretório do projeto.
-4. Execute o comando `npm install` para instalar as dependências.
-5. Inicie o servidor de desenvolvimento com `npm run dev`.
-6. Acesse `http://localhost:3000` no seu navegador para visualizar o projeto.
-
-## 📚 Mais Informações
-
-Se você deseja mergulhar fundo no desenvolvimento de assistentes inteligentes com IA, SSR e integração de APIs, [acesse o curso]() e acompanhe todo o processo de desenvolvimento do Vidy!
+- **Next.js** – Framework React com SSR e API Routes
+- **Vercel AI SDK** – Integração com modelos de IA
+- **Redis / Upstash** – Controle de requisições e acessos
+- **Node.js** – Back-end do projeto
+- **JavaScript (ES6+)** – Linguagem principal
