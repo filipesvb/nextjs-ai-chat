@@ -19,7 +19,7 @@
 > _(GIF ou imagem mostrando o ROB – Tech Help em ação)_
 
 <p align="center">
-  <img src="demo.gif" alt="Demonstração do ROB - Tech Help" width="600"/>
+  <img src="rob.gif" alt="Demonstração do ROB - Tech Help" width="600"/>
 </p>
 
 ---
