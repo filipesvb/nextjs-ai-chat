@@ -22,12 +22,12 @@ export const outfit = Outfit({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br">
-      <body className={`${roboto.className} overflow-hidden`}>
-        <div className="w-[200%] h-full absolute top-0 left-0 -z-1 animate-wiggle">
+    <html lang="pt-br" className="">
+      <body className={`${roboto.className}`}>
+        {/* <div className="w-[200%] max-h-full absolute top-0 left-0 -z-1 animate-wiggle">
           <div className="bg-[url(./hoffman.png)] w-full h-full"></div>
           <div className="bg-[url(./hoffman.png)] w-full h-full"></div>
-        </div>
+        </div> */}
         <Container>
           <Header />
           {children}

@@ -1,15 +1,15 @@
 .container {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    height: calc(100vh - 140px);
-    scrollbar-color: white #5e819ca9;
-    scrollbar-width: thin;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: calc(100dvh - 140px);
+  scrollbar-color: white #5e819ca9;
+  scrollbar-width: thin;
 }
 
 .chat {
-    flex-grow: 1;
-    overflow-y: scroll;
-    width: 100%;
+  flex-grow: 1;
+  overflow-y: scroll;
+  width: 100%;
 }
