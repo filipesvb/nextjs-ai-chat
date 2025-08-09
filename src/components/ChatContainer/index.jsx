@@ -46,7 +46,7 @@ export const ChatContainer = () => {
 
   return (
     <section className={styles.container}>
-      <div ref={ref} className={`${styles.chat} mt-10 border-2`}>
+      <div ref={ref} className={`${styles.chat} mt-10 `}>
         {messages.map((msg) => (
           <ChatBubble
             onRemove={() => handleRemove(msg.id)}

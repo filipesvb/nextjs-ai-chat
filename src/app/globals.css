@@ -1,7 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --animate-wiggle: wiggle 50s infinite linear;
+  @keyframes wiggle {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+}
+
 :root {
-  --bg-color: #415a6d;
+  --bg-color: #253846;
   --n-color-text: #ececec;
 }
 
